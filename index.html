@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра на умножение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-area">
+            <!-- Контейнер для примеров (список) -->
+            <div class="examples-list" id="examplesList"></div>
+            
+            <!-- Контейнер для кубиков -->
+            <div class="cubes-scheme" id="cubesScheme">
+            </div>
+            
+            <!-- Кнопка проверки -->
+            <button id="checkButton" class="check-button" disabled>Done</button>
+            
+            <!-- Контейнер для анимации блоков -->
+            <div class="blocks-container" id="blocksContainer"></div>
+        </div>
+    </div>
+    
+    <!-- Скрипт игры (ES модули) -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+

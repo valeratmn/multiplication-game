@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# TypeScript compiled output
+js/*.js
+js/*.js.map
+!js/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
+dist/
+
+
