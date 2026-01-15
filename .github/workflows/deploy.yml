@@ -35,6 +35,15 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "Checking compiled files..."
+          ls -la js/ || echo "js directory not found"
+          test -f js/main.js || (echo "ERROR: js/main.js not found!" && exit 1)
+          echo "Build verification successful!"
+          echo "Files to be deployed:"
+          find . -type f -name "*.html" -o -name "*.css" -o -name "*.js" | grep -v node_modules | head -20
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
